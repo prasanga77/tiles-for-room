@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+.border {
+  border: 2px solid var(--grid-gap-color, white);
+}
+
+input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.h-3 {
+  height: 60%;
+}
+
+.h-2 {
+  height: 40%;
+}
+
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-blue-600 {
+  background-color: #3182ce;
+}
+
+.bg-blue-700 {
+  background-color: #2b6cb0;
+}
+
+.bg-green-600 {
+  background-color: #48bb78;
+}
+
+.bg-green-700 {
+  background-color: #38a169;
+}
+
+.bg-yellow-500 {
+  background-color: #ecc94b;
+}
+
+@media (max-width: 768px) {
+  .room-designer {
+    flex-direction: column;
+  }
+
+  .wall-section, .floor-section {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: none;
+  }
+}

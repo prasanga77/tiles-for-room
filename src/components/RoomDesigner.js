@@ -151,14 +151,14 @@ const RoomDesigner = () => {
       </div>
       
       <button 
-        className="fixed top-4 left-4 bg-gray-800 text-black p-2 rounded z-50"
+        className="fixed top-4 left-4 bg-gray-800 text-white p-2 rounded z-50"
         onClick={() => setShowSidebar(!showSidebar)}
       >
         <Menu />
       </button>
       
       {showSidebar && (
-        <div className="fixed inset-0 bg-white bg-opacity-50 z-40" onClick={() => setShowSidebar(false)}></div>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setShowSidebar(false)}></div>
       )}
       
       <div className={`fixed top-0 left-0 h-full bg-gray-800 p-4 overflow-y-auto transition-transform duration-300 ease-in-out z-50 ${showSidebar ? 'translate-x-0' : '-translate-x-full'}`} style={{width: '300px'}}>

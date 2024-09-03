@@ -162,9 +162,9 @@ const RoomDesigner = () => {
       )}
       
       <div className={`fixed top-0 left-0 h-full bg-gray-800 p-4 overflow-y-auto transition-transform duration-300 ease-in-out z-50 ${showSidebar ? 'translate-x-0' : '-translate-x-full'}`} style={{width: '300px'}}>
-          <button onClick={() => setShowSidebar(false)} className="absolute top-2 right-2 text-white text-2xl font-bold p-2">
+        <button onClick={() => setShowSidebar(false)} className="absolute top-2 right-2 text-white text-2xl font-bold p-2">
           &times;
-          </button>
+        </button>
         <h2 className="text-xl font-bold mb-4 text-white">Room Designer</h2>
         <div className="mb-4">
           <h3 className="font-semibold mb-2 text-white">Wall Grid Size</h3>
